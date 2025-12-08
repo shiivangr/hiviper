@@ -1,4 +1,4 @@
-from viper_ascii import say
+from hiviper.viper_ascii import say
 
 def main():
     print(say("HiViper"))

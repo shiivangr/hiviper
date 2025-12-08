@@ -1,3 +1,4 @@
+import sys
 def say(text: str) -> str:
     bubble = f"""
     {'_' * (len(text) + 4)}
@@ -25,3 +26,7 @@ def say(text: str) -> str:
     """
 
     return bubble + viper
+
+def cli():
+    text=" ".join(sys.argv[1:]) or "Hello"
+    print(say(text))
